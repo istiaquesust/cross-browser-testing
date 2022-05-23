@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="2" parallel="classes" name="Suite">
+
+  <test thread-count="2" parallel="classes" name="Windows 10 Chrome 101.0 1024x768">
+  
+  	<parameter name="browserName" value="Chrome" />
+  	<parameter name="version" value="101.0" />
+  	<parameter name="platform" value="Windows 10" />
+  	<parameter name= "resolution" value="1024x768" />
+  	<parameter name="build" value="First Test" />
+  	<parameter name="name" value="Windows 10 Chrome 101.0" />
+  	<parameter name="network" value="true" />
+  	<parameter name="visual" value="true" />
+  	<parameter name="video" value="true" />
+  	<parameter name="console" value="true" />
+    <classes>
+      <class name="simpletest_package.TestNGTodo2"/>
+    </classes>
+  </test> <!-- Test -->
+
+  
+  <test thread-count="2" parallel="classes" name="MacOS Catalina Chrome 100.0 1024x768">
+  
+  	<parameter name="browserName" value="Chrome" />
+  	<parameter name="version" value="100.0" />
+  	<parameter name="platform" value="MacOS Catalina" />
+  	<parameter name= "resolution" value="1024x768" />
+  	<parameter name="build" value="First Test" />
+  	<parameter name="name" value="MacOS Catalina Chrome 100.0" />
+  	<parameter name="network" value="true" />
+  	<parameter name="visual" value="true" />
+  	<parameter name="video" value="true" />
+  	<parameter name="console" value="true" />
+    <classes>
+      <class name="simpletest_package.TestNGTodo2"/>
+    </classes>
+  </test> <!-- Test -->
+  
+    <test thread-count="2" parallel="classes" name="MacOS Catalina Safari 13.0 1024x768">
+  
+  	<parameter name="browserName" value="Safari" />
+  	<parameter name="version" value="13.0" />
+  	<parameter name="platform" value="MacOS Catalina" />
+  	<parameter name= "resolution" value="1024x768" />
+  	<parameter name="build" value="First Test" />
+  	<parameter name="name" value="MacOS Catalina Chrome 100.01" />
+  	<parameter name="network" value="true" />
+  	<parameter name="visual" value="true" />
+  	<parameter name="video" value="true" />
+  	<parameter name="console" value="true" />
+    <classes>
+      <class name="simpletest_package.TestNGTodo2"/>
+    </classes>
+  </test> <!-- Test -->
+   
+</suite> <!-- Suite -->
